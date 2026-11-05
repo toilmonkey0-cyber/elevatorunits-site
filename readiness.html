@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>Door lock readiness check — ElevatorUnits</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#content">Skip to content</a>
+    <div class="page">
+      <header class="nav">
+        <a class="brand" href="index.html">
+          <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true" fill="none">
+            <path d="M6 4v24" stroke="currentColor" stroke-width="3" stroke-linecap="square" />
+            <path d="M11 8h16M11 16h16M11 24h10" stroke="currentColor" stroke-width="2.5" stroke-linecap="square" />
+          </svg>
+          ElevatorUnits
+        </a>
+        <nav aria-label="Site">
+          <ul class="nav-links">
+            <li><a href="lookup.html">Lookup</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="dlm.html">2029 deadline</a></li>
+            <li><a href="readiness.html" aria-current="page">Readiness</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+          </ul>
+        </nav>
+        <a class="eu-button eu-button-secondary" data-store-url href="https://chromewebstore.google.com/">Add to Chrome</a>
+      </header>
+      <main id="content">
+        <section class="hero" aria-labelledby="hero-title">
+          <p class="index">06 — Free, and not an inspection</p>
+          <h1 id="hero-title">Door lock readiness check.</h1>
+          <span class="draw-rule" aria-hidden="true"></span>
+          <p class="lede">
+            Tell us which building you want checked against the public record. This form does not send
+            your answers. It is not code advice, and it does not say a monitor is installed. Enforcement
+            of ASME A17.3-2020 §3.10.12, adopted in FAC 61C-5.001, is August 1, 2029.
+          </p>
+        </section>
+        <form class="readiness-form eu-card" id="readiness-form" action="#form-placeholder" method="post">
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required enterkeyhint="next" />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required enterkeyhint="next" />
+          </div>
+          <div class="field">
+            <label for="phone">Phone <span class="muted">(optional)</span></label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" enterkeyhint="next" />
+          </div>
+          <fieldset class="choices">
+            <legend class="choice-legend">You are</legend>
+            <label class="choice"><input type="radio" name="role" value="contractor" required /> An elevator contractor</label>
+            <label class="choice"><input type="radio" name="role" value="property-manager" /> A property or community manager</label>
+            <label class="choice"><input type="radio" name="role" value="other" /> Someone else</label>
+          </fieldset>
+          <div class="field">
+            <label for="address">Building address</label>
+            <input
+              id="address"
+              name="address"
+              type="text"
+              autocomplete="street-address"
+              required
+              enterkeyhint="next"
+              aria-describedby="address-hint"
+            />
+            <p class="hint" id="address-hint">Street, city, and zip. Miami-Dade and Broward coverage is partial.</p>
+          </div>
+          <div class="field">
+            <label for="note">What you want checked <span class="muted">(optional)</span></label>
+            <textarea id="note" name="note" enterkeyhint="done"></textarea>
+          </div>
+          <button class="eu-button eu-button-primary" type="submit">Submit the readiness check</button>
+          <p class="form-status" id="form-status" role="status">
+            Submitting stays on this page. The action is #form-placeholder. Nothing is transmitted.
+          </p>
+        </form>
+      </main>
+      <footer class="site-footer">
+        <p>
+          Not code advice. Confirm with a licensed elevator contractor and DBPR.
+          <a href="dlm.html">The 2029 explainer</a>.
+        </p>
+        <p>Contact <a href="mailto:healthyinterest640@agentmail.to">healthyinterest640@agentmail.to</a>.</p>
+      </footer>
+    </div>
+    <script src="readiness.js"></script>
+    <script src="store-url.js"></script>
+  </body>
+</html>

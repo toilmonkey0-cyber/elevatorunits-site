@@ -1,0 +1,52 @@
+/* ElevatorUnits direction B — Field Ledger
+   CSS variables for the video tools and, later, the extension.
+   Source: tokens-B.json.
+
+   Contrast pairs, WCAG 2.1 AA:
+   - #1b1814 on #f4efe4 = 15.42:1
+   - #1b1814 on #fffbf3 = 17.13:1
+   - #1b1814 on #f3e2d6 = 14.03:1
+   - #3e382f on #f4efe4 = 10.11:1
+   - #3e382f on #fffbf3 = 11.23:1
+   - #fffbf3 on #9e3412 = 6.89:1
+   - #fffbf3 on #7c280e = 9.39:1
+   - #9e3412 on #f4efe4 = 6.20:1
+   - #6e6254 on #f4efe4 = 5.18:1
+   - #8a7b68 on #f4efe4 = 3.58:1
+
+   Motion: enter 480ms cubic-bezier(0.22, 1, 0.36, 1);
+            rule draw 700ms cubic-bezier(0.2, 0, 0, 1), once, scale on the inline axis;
+            hover 160ms cubic-bezier(0.2, 0, 0, 1).
+   Reduced motion shows the rule already drawn. Nothing loops.
+*/
+:root {
+  color-scheme: light;
+  --color-background: #f4efe4;
+  --color-surface: #fffbf3;
+  --color-foreground: #1b1814;
+  --color-muted: #3e382f;
+  --color-accent: #9e3412;
+  --color-accent-hover: #7c280e;
+  --color-accent-foreground: #fffbf3;
+  --color-border: #6e6254;
+  --color-border-soft: #8a7b68;
+  --color-notice: #f3e2d6;
+  --color-focus: #9e3412;
+  --font-display: "Fraunces", "Iowan Old Style", "Palatino Linotype", "Palatino", serif;
+  --font-body: "Public Sans", "Segoe UI", sans-serif;
+  --font-weight-display: 600;
+  --font-weight-body: 400;
+  --font-weight-strong: 600;
+  --duration-enter: 480ms;
+  --duration-draw: 700ms;
+  --duration-hover: 160ms;
+  --delay-panel: 120ms;
+  --ease-enter: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-draw: cubic-bezier(0.2, 0, 0, 1);
+  --ease-hover: cubic-bezier(0.2, 0, 0, 1);
+  --radius-control: 0px;
+  --radius-card: 0px;
+  --size-target: 44px;
+  --size-focus: 3px;
+  --size-binding: 0.7rem;
+}

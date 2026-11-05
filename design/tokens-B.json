@@ -1,0 +1,119 @@
+{
+  "$description": "ElevatorUnits site direction B, Field Ledger. Design Tokens Format ($type and $value). Matches tokens-B.css. Contrast ratios are WCAG 2.1, normal text unless noted.",
+  "color": {
+    "background": {
+      "$type": "color",
+      "$value": "#f4efe4",
+      "$description": "Paper. Foreground #1B1814 on this is 15.42:1. Muted #3E382F on this is 10.11:1."
+    },
+    "surface": {
+      "$type": "color",
+      "$value": "#fffbf3",
+      "$description": "Cards and the units panel. Foreground #1B1814 on this is 17.13:1. Muted #3E382F on this is 11.23:1."
+    },
+    "foreground": {
+      "$type": "color",
+      "$value": "#1b1814",
+      "$description": "Ink. On background 15.42:1. On surface 17.13:1. On notice 14.03:1."
+    },
+    "muted": {
+      "$type": "color",
+      "$value": "#3e382f",
+      "$description": "Secondary text. On background 10.11:1. On surface 11.23:1."
+    },
+    "accent": {
+      "$type": "color",
+      "$value": "#9e3412",
+      "$description": "Signal red-orange. Foreground-on-accent #FFFBF3 on this is 6.89:1. Accent as text on background is 6.20:1."
+    },
+    "accent-hover": {
+      "$type": "color",
+      "$value": "#7c280e",
+      "$description": "Primary button hover. #FFFBF3 on this is 9.39:1."
+    },
+    "accent-foreground": {
+      "$type": "color",
+      "$value": "#fffbf3",
+      "$description": "Text on accent and accent-hover."
+    },
+    "border": {
+      "$type": "color",
+      "$value": "#6e6254",
+      "$description": "Card borders and the drawn rule. On background 5.18:1."
+    },
+    "border-soft": {
+      "$type": "color",
+      "$value": "#8a7b68",
+      "$description": "Row rules inside the panel. On background 3.58:1. On surface, higher."
+    },
+    "notice": {
+      "$type": "color",
+      "$value": "#f3e2d6",
+      "$description": "Coverage notice fill. Foreground #1B1814 on this is 14.03:1."
+    },
+    "focus": {
+      "$type": "color",
+      "$value": "#9e3412",
+      "$description": "Focus ring. On background 6.20:1."
+    }
+  },
+  "font": {
+    "display": {
+      "$type": "fontFamily",
+      "$value": ["Fraunces", "Iowan Old Style", "Palatino Linotype", "Palatino", "serif"],
+      "$description": "Fraunces is a free Google Font, optical size 9–144, weights 600 and 700."
+    },
+    "body": {
+      "$type": "fontFamily",
+      "$value": ["Public Sans", "Segoe UI", "sans-serif"],
+      "$description": "Public Sans is a free Google Font. Weights 400 and 600."
+    }
+  },
+  "fontWeight": {
+    "display": { "$type": "fontWeight", "$value": 600 },
+    "body": { "$type": "fontWeight", "$value": 400 },
+    "strong": { "$type": "fontWeight", "$value": 600 }
+  },
+  "duration": {
+    "enter": {
+      "$type": "duration",
+      "$value": "480ms",
+      "$description": "Headline and panel fade. One shot. Opacity and translate only."
+    },
+    "draw": {
+      "$type": "duration",
+      "$value": "700ms",
+      "$description": "The signal rule draws once from the inline start."
+    },
+    "hover": { "$type": "duration", "$value": "160ms" }
+  },
+  "easing": {
+    "enter": {
+      "$type": "cubicBezier",
+      "$value": [0.22, 1, 0.36, 1],
+      "$description": "Settle. No bounce."
+    },
+    "draw": {
+      "$type": "cubicBezier",
+      "$value": [0.2, 0, 0, 1],
+      "$description": "Rule draw. Ease-out, no overshoot."
+    },
+    "hover": { "$type": "cubicBezier", "$value": [0.2, 0, 0, 1] }
+  },
+  "borderRadius": {
+    "control": { "$type": "dimension", "$value": "0px" },
+    "card": { "$type": "dimension", "$value": "0px" }
+  },
+  "size": {
+    "target": { "$type": "dimension", "$value": "44px" },
+    "focus": { "$type": "dimension", "$value": "3px" },
+    "binding": {
+      "$type": "dimension",
+      "$value": "0.7rem",
+      "$description": "Signal binding on the inline start of the page."
+    }
+  },
+  "delay": {
+    "panel": { "$type": "duration", "$value": "120ms" }
+  }
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>Privacy — ElevatorUnits</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#content">Skip to content</a>
+    <div class="page">
+      <header class="nav">
+        <a class="brand" href="index.html">
+          <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true" fill="none">
+            <path d="M6 4v24" stroke="currentColor" stroke-width="3" stroke-linecap="square" />
+            <path d="M11 8h16M11 16h16M11 24h10" stroke="currentColor" stroke-width="2.5" stroke-linecap="square" />
+          </svg>
+          ElevatorUnits
+        </a>
+        <nav aria-label="Site">
+          <ul class="nav-links">
+            <li><a href="lookup.html">Lookup</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="dlm.html">2029 deadline</a></li>
+            <li><a href="readiness.html">Readiness</a></li>
+            <li><a href="privacy.html" aria-current="page">Privacy</a></li>
+          </ul>
+        </nav>
+        <a class="eu-button eu-button-secondary" data-store-url href="https://chromewebstore.google.com/">Add to Chrome</a>
+      </header>
+      <main id="content" class="prose">
+        <section class="hero" aria-labelledby="hero-title">
+          <p class="index">05 — Privacy</p>
+          <h1 id="hero-title">This site does not collect personal data.</h1>
+          <span class="draw-rule" aria-hidden="true"></span>
+          <p class="lede">Last updated November 4, 2026. This page covers these website files. The extension is described after that.</p>
+          <p><a href="https://docs.google.com/document/d/19zp2edPdvToA8Zb9_doQaqtQ38WDxE1VeCoMQ7hhN_I/preview">Canonical public privacy policy</a></p>
+        </section>
+        <h2>The website</h2>
+        <p>
+          These pages are static. There are no accounts, no cookies set by ElevatorUnits, no analytics,
+          and no advertising. Fonts are files shipped with the site. The pages do not call Google Fonts,
+          a payment processor, or a form vendor.
+        </p>
+        <p>
+          The sample lookup compares what you type with a Palm Beach file included in the page. The
+          script does not send that text, the match, or an account anywhere. The sample is not the live
+          DBPR extract.
+        </p>
+        <p>
+          The readiness form’s action is <code>#form-placeholder</code>. The page script stops the
+          submit and shows that nothing was sent. It does not call a server. There is no third-party
+          form service. If the script does not run, the browser posts to that placeholder on this same
+          page, still not to a form vendor.
+        </p>
+        <p>The reserve button’s address is <code>#stripe-placeholder</code>. It does not open Stripe and it does not charge a card.</p>
+        <h2>The extension</h2>
+        <p>
+          ElevatorUnits does not collect personal data, and it does not send personal data anywhere.
+          Lookups run on the device. The extension reads the address, name, or license number you
+          highlight, compares it with a copy of the Florida DBPR elevator file stored in that browser,
+          and shows the match in the panel. The highlighted text and the last result stay in
+          <code>chrome.storage.local</code> on that device. The elevator file stays in IndexedDB in the
+          extension. Download progress stays in <code>chrome.storage.session</code>, which Chrome clears
+          when the browser closes.
+        </p>
+        <p>
+          The only network call from the extension is a download of the public DBPR elevator extract
+          from
+          <a href="https://www2.myfloridalicense.com/sto/file_download/extracts/elevator.csv">https://www2.myfloridalicense.com/sto/file_download/extracts/elevator.csv</a>.
+          The request does not include the highlighted text, the lookup result, or an account.
+        </p>
+        <p>
+          The extension does not use accounts, cookies, analytics, advertising, or
+          <code>chrome.storage.sync</code>. It does not sell data. It does not use data for credit or
+          lending. Removing the extension deletes the extract and the last lookup from that browser.
+        </p>
+        <p>The same extension text is in <code>docs/PRIVACY.md</code> in the project, last updated October 30, 2026.</p>
+      </main>
+      <footer class="site-footer">
+        <p>Questions about the extension go to <a href="mailto:healthyinterest640@agentmail.to">healthyinterest640@agentmail.to</a>.</p>
+      </footer>
+    </div>
+    <script src="store-url.js"></script>
+  </body>
+</html>
