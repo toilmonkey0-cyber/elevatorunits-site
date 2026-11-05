@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>ElevatorUnits</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#content">Skip to content</a>
+    <div class="page">
+      <header class="nav">
+        <a class="brand" href="index.html" aria-current="page">
+          <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true" fill="none">
+            <path d="M6 4v24" stroke="currentColor" stroke-width="3" stroke-linecap="square" />
+            <path d="M11 8h16M11 16h16M11 24h10" stroke="currentColor" stroke-width="2.5" stroke-linecap="square" />
+          </svg>
+          ElevatorUnits
+        </a>
+        <nav aria-label="Site">
+          <ul class="nav-links">
+            <li><a href="lookup.html">Lookup</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="dlm.html">2029 deadline</a></li>
+            <li><a href="readiness.html">Readiness</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+          </ul>
+        </nav>
+        <a class="eu-button eu-button-secondary" data-store-url href="https://chromewebstore.google.com/">Add to Chrome</a>
+      </header>
+      <main id="content">
+        <div class="landing-stage">
+          <section class="hero" aria-labelledby="hero-title">
+            <p class="index">01 — For contractors and Florida property managers</p>
+            <h1 id="hero-title">Read the DBPR record before you price the job.</h1>
+            <span class="draw-rule" aria-hidden="true"></span>
+            <p class="lede">
+              ElevatorUnits is a free Chrome extension. Highlight an address, a name, or a license
+              number. The panel lists the units on that DBPR record.
+            </p>
+            <div class="actions">
+              <a class="eu-button eu-button-primary" data-store-url href="https://chromewebstore.google.com/">Add to Chrome</a>
+              <a class="eu-button eu-button-primary" href="lookup.html">Try the sample lookup</a>
+              <a class="eu-button eu-button-secondary" href="dlm.html">Read the 2029 deadline</a>
+            </div>
+            <p class="note">Miami-Dade and Broward coverage is partial. The sample lookup is not the live extract.</p>
+          </section>
+          <article class="eu-panel eu-card" aria-labelledby="panel-title">
+            <p class="eu-kicker">Recorded example · not a live lookup</p>
+            <h2 id="panel-title">License 6728</h2>
+            <p class="eu-address">3051 S OCEAN BLVD, BOCA RATON, FL 33432</p>
+            <p class="eu-panel-meta">1 unit at 1 recorded address</p>
+            <p class="eu-panel-meta">Data date: Oct 25, 2026, 6:48 AM ET</p>
+            <dl class="eu-panel-fields">
+              <div>
+                <dt>Match confidence</dt>
+                <dd>Exact</dd>
+              </div>
+              <div>
+                <dt>Install year</dt>
+                <dd>1965</dd>
+              </div>
+              <div>
+                <dt>Class</dt>
+                <dd>02 hydraulic</dd>
+              </div>
+              <div>
+                <dt>Status</dt>
+                <dd>20 active</dd>
+              </div>
+              <div>
+                <dt>Service contract</dt>
+                <dd>SERV <span class="eu-note">as reported to DBPR</span></dd>
+              </div>
+              <div>
+                <dt>Servicer</dt>
+                <dd>
+                  LIBERTY ELEVATOR CORPORATION
+                  <span class="eu-note">per DBPR record, data date: Oct 25, 2026, 6:48 AM ET</span>
+                </dd>
+              </div>
+              <div>
+                <dt>Licensee Name (certificate holder, per DBPR record)</dt>
+                <dd>BOCA REEF ASSN INC</dd>
+              </div>
+              <div>
+                <dt>Business Name (per DBPR record)</dt>
+                <dd>not in DBPR record</dd>
+              </div>
+              <div>
+                <dt>Raw DBPR address</dt>
+                <dd>3051 S OCEAN BLVD, BOCA RATON, FL 33432</dd>
+              </div>
+            </dl>
+            <p class="eu-tier">Higher priority</p>
+            <p>
+              DLM check: ASME A17.3-2020 §3.10.12 compliance required from August 1, 2025, enforcement
+              not until August 1, 2029 — verify DLM status, do not assume it is installed.
+            </p>
+            <p>Not code advice. Confirm with a licensed elevator contractor and DBPR.</p>
+            <p class="eu-source">
+              Transcribed from the recorded popup for this license. Highlighted text was 3051 S Ocean
+              Blvd, Boca Raton.
+            </p>
+          </article>
+        </div>
+        <section class="band" aria-label="Coverage and the deadline">
+          <div class="band-grid">
+            <aside class="eu-notice eu-card">
+              <h2>Partial county coverage</h2>
+              <p>
+                Miami-Dade and Broward coverage is partial. Miami-Dade uses the Office of Elevator
+                Safety list, data as of Oct 28, 2026. Broward uses the Elevator Section release, data
+                as of Oct 2026. Owner and install year on those rows say Not in county record. The DLM
+                flag says Unknown, install year not in county record.
+              </p>
+              <p>
+                City of Miami and Miami Beach run their own programs. ElevatorUnits does not have their
+                unit lists yet. The panel says: "This jurisdiction runs its own elevator program, so
+                state data is not available here." A miss does not mean the building has no elevators.
+              </p>
+            </aside>
+            <article class="eu-card">
+              <h2>The 2029 deadline</h2>
+              <p>
+                Florida rule 61C-5.001 adopts ASME A17.3-2020. Section 3.10.12 compliance was required
+                from August 1, 2025. Enforcement is not until August 1, 2029.
+              </p>
+              <p>
+                The flag does not mean a monitor is installed. Not code advice. Confirm with a licensed
+                elevator contractor and DBPR.
+              </p>
+              <p><a href="dlm.html">The full explainer</a> and the <a href="readiness.html">free readiness check</a>.</p>
+            </article>
+          </div>
+        </section>
+      </main>
+      <footer class="site-footer">
+        <p>Field Ledger. No accounts, no analytics, and no payment on this site. The paid pilot is invoiced by hand.</p>
+        <p>Contact <a href="mailto:healthyinterest640@agentmail.to">healthyinterest640@agentmail.to</a>.</p>
+      </footer>
+    </div>
+    <script src="store-url.js"></script>
+  </body>
+</html>

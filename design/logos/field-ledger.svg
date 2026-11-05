@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none" role="img">
+  <title>ElevatorUnits field ledger mark</title>
+  <path d="M6 4v24" stroke="#000" stroke-width="3" stroke-linecap="square"/>
+  <path d="M11 8h16M11 16h16M11 24h10" stroke="#000" stroke-width="2.5" stroke-linecap="square"/>
+</svg>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>Sample lookup — ElevatorUnits</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#content">Skip to content</a>
+    <div class="page">
+      <header class="nav">
+        <a class="brand" href="index.html">
+          <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true" fill="none">
+            <path d="M6 4v24" stroke="currentColor" stroke-width="3" stroke-linecap="square" />
+            <path d="M11 8h16M11 16h16M11 24h10" stroke="currentColor" stroke-width="2.5" stroke-linecap="square" />
+          </svg>
+          ElevatorUnits
+        </a>
+        <nav aria-label="Site">
+          <ul class="nav-links">
+            <li><a href="lookup.html" aria-current="page">Lookup</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="dlm.html">2029 deadline</a></li>
+            <li><a href="readiness.html">Readiness</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+          </ul>
+        </nav>
+        <a class="eu-button eu-button-secondary" data-store-url href="https://chromewebstore.google.com/">Add to Chrome</a>
+      </header>
+      <main id="content">
+        <section class="hero" aria-labelledby="hero-title">
+          <p class="index">02 — Sample only</p>
+          <h1 id="hero-title">Look up one address in the Palm Beach sample.</h1>
+          <span class="draw-rule" aria-hidden="true"></span>
+          <p class="lede">
+            This search runs in your browser. It uses 9,447 Palm Beach rows from
+            <code>test/fixtures/palm-beach-locations.json</code>: license, location address, licensee
+            name, and business name. It is not the live DBPR extract, and it does not send what you type.
+          </p>
+          <form class="lookup-form" id="lookup-form" action="#results" method="get">
+            <div class="field">
+              <label for="q">Address, name, or license number</label>
+              <input
+                id="q"
+                name="q"
+                type="search"
+                autocomplete="off"
+                autocapitalize="off"
+                autocorrect="off"
+                spellcheck="false"
+                enterkeyhint="search"
+                aria-describedby="lookup-hint"
+              />
+              <p class="hint" id="lookup-hint">
+                Try 3051 S Ocean Blvd, Boca Raton, the name BOCA REEF ASSN INC, or license 6728. An
+                exact license wins over reading those digits as a zip.
+              </p>
+            </div>
+            <button class="eu-button eu-button-primary" type="submit">Look up this sample</button>
+          </form>
+        </section>
+        <section id="results" class="results" aria-live="polite" aria-label="Sample results">
+          <p>The results will list every match in the sample. A blank business name says not in DBPR record. Class, status, install year, and servicer say not in this sample, except on license 6728, where those fields are transcribed from the recorded popup and the servicer is labeled per DBPR record.</p>
+        </section>
+        <aside class="eu-card eu-notice">
+          <h2>What this sample leaves out</h2>
+          <p>
+            Miami-Dade and Broward coverage is partial, and those county lists are not in this file.
+            City of Miami and Miami Beach run their own programs. A miss here does not mean the
+            building has no elevators.
+          </p>
+        </aside>
+      </main>
+      <footer class="site-footer">
+        <p>The sample file has no data date of its own. License 6728’s extra fields use the popup dated Oct 25, 2026, 6:48 AM ET.</p>
+        <p>Contact <a href="mailto:healthyinterest640@agentmail.to">healthyinterest640@agentmail.to</a>.</p>
+      </footer>
+    </div>
+    <script src="sample/palm-beach.js"></script>
+    <script src="lookup.js"></script>
+    <script src="store-url.js"></script>
+  </body>
+</html>
