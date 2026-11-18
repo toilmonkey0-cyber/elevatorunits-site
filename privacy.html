@@ -34,7 +34,7 @@
           <p class="index">05 — Privacy</p>
           <h1 id="hero-title">This site does not collect personal data.</h1>
           <span class="draw-rule" aria-hidden="true"></span>
-          <p class="lede">Last updated November 4, 2026. This page covers these website files. The extension is described after that.</p>
+          <p class="lede">Last updated November 18, 2026. This page covers these website files. The extension is described after that.</p>
           <p><a href="https://docs.google.com/document/d/19zp2edPdvToA8Zb9_doQaqtQ38WDxE1VeCoMQ7hhN_I/preview">Canonical public privacy policy</a></p>
         </section>
         <h2>The website</h2>
@@ -59,8 +59,11 @@
         <p>
           ElevatorUnits does not collect personal data, and it does not send personal data anywhere.
           Lookups run on the device. The extension reads the address, name, or license number you
-          highlight, compares it with a copy of the Florida DBPR elevator file stored in that browser,
-          and shows the match in the panel. The highlighted text and the last result stay in
+          highlight, compares it with a copy of the Florida DBPR elevator file stored in that browser
+          and with the City of Miami, Miami Beach, Broward, Miami-Dade, and Central Florida Tourism
+          Oversight District lists shipped in the extension, and shows the match in the panel. Those
+          lists are the copies each city, county, or district provided. The highlighted text and the
+          last result stay in
           <code>chrome.storage.local</code> on that device. The elevator file stays in IndexedDB in the
           extension. Download progress stays in <code>chrome.storage.session</code>, which Chrome clears
           when the browser closes.
@@ -69,6 +72,8 @@
           The only network call from the extension is a download of the public DBPR elevator extract
           from
           <a href="https://www2.myfloridalicense.com/sto/file_download/extracts/elevator.csv">https://www2.myfloridalicense.com/sto/file_download/extracts/elevator.csv</a>.
+          The city, county, and district lists are shipped with the extension. They are not a separate
+          download.
           The request does not include the highlighted text, the lookup result, or an account.
         </p>
         <p>
@@ -76,7 +81,10 @@
           <code>chrome.storage.sync</code>. It does not sell data. It does not use data for credit or
           lending. Removing the extension deletes the extract and the last lookup from that browser.
         </p>
-        <p>The same extension text is in <code>docs/PRIVACY.md</code> in the project, last updated October 30, 2026.</p>
+        <p>
+          <code>docs/PRIVACY.md</code> in the project, last updated October 30, 2026, describes the DBPR
+          download. This page also names the city, county, and district lists shipped with the extension.
+        </p>
       </main>
       <footer class="site-footer">
         <p>Questions about the extension go to <a href="mailto:healthyinterest640@agentmail.to">healthyinterest640@agentmail.to</a>.</p>

@@ -15,23 +15,23 @@ const RESULT_CAP = 30;
 const COVERAGE_TESTS = [
   {
     pattern: /MIAMI BEACH/,
-    text: "The City of Miami Beach runs its own elevator program, so state data is not available here. ElevatorUnits does not have that unit list yet. This demo only searches a Palm Beach sample. A miss does not mean the building has no elevators.",
+    text: "The extension includes the City of Miami Beach list as the city provided it. This demo only searches a Palm Beach sample, so that list is not in this file. A miss does not mean the building has no elevators.",
   },
   {
     pattern: /MIAMI-DADE|MIAMI DADE|\bDORAL\b|\bHIALEAH\b|\bAVENTURA\b|CORAL GABLES/,
-    text: "Miami-Dade coverage is partial. The extension uses the Office of Elevator Safety list, data as of Oct 28, 2026. Owner and install year on those rows say Not in county record. This demo only searches a Palm Beach sample, so it cannot show that county list. A miss does not mean the building has no elevators.",
+    text: "The extension includes the Miami-Dade list as the county provided it. That list is the Office of Elevator Safety list, data as of Oct 28, 2026. Owner and install year on those rows say Not in county record. This demo only searches a Palm Beach sample, so that list is not in this file. A miss does not mean the building has no elevators.",
   },
   {
     pattern: /\bBROWARD\b|FORT LAUDERDALE|\bHOLLYWOOD\b|PEMBROKE|POMPANO|CORAL SPRINGS|\bSUNRISE\b/,
-    text: "Broward coverage is partial. The extension uses the Elevator Section release, data as of Oct 2026. The servicer on those rows is labeled Contractor per county record. Owner and install year say Not in county record. This demo only searches a Palm Beach sample. A miss does not mean the building has no elevators.",
+    text: "The extension includes the Broward list as the county provided it. That list is the Elevator Section release, data as of Oct 2026. The servicer on those rows is labeled Contractor per county record. Owner and install year say Not in county record. This demo only searches a Palm Beach sample, so that list is not in this file. A miss does not mean the building has no elevators.",
   },
   {
     pattern: /BAY LAKE|LAKE BUENA VISTA/,
-    text: "The Central Florida Tourism Oversight District runs its own elevator program. This Palm Beach sample does not include the district file. A Bay Lake or Lake Buena Vista address that is not in that file still says ElevatorUnits does not have their data yet.",
+    text: "The extension includes the Central Florida Tourism Oversight District list as the district provided it, data as of Oct 27, 2026. This Palm Beach sample does not include that list. A miss does not mean the building has no elevators.",
   },
   {
     pattern: /\bMIAMI\b/,
-    text: "Miami can mean the City of Miami or Miami-Dade County. The City of Miami runs its own program, and ElevatorUnits does not have that unit list yet. Miami-Dade coverage is partial. This demo only searches a Palm Beach sample. A miss does not mean the building has no elevators.",
+    text: "Miami can mean the City of Miami or Miami-Dade County. The extension includes the City of Miami list as the city provided it, and the Miami-Dade list as the county provided it. This demo only searches a Palm Beach sample. A miss does not mean the building has no elevators.",
   },
 ];
 
