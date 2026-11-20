@@ -37,14 +37,16 @@
             <span class="draw-rule" aria-hidden="true"></span>
             <p class="lede">
               ElevatorUnits is a free Chrome extension. Highlight an address, a name, or a license
-              number. The panel lists the units on that DBPR record.
+              number. The panel lists the matching units from the Florida DBPR statewide extract and
+              from the City of Miami, Miami Beach, Broward, and Miami-Dade lists, as each city or
+              county provided them.
             </p>
             <div class="actions">
               <a class="eu-button eu-button-primary" data-store-url href="https://chromewebstore.google.com/detail/elevatorunits-florida-ele/elldjehfjggnfpdfcalmachhheapldoo">Add to Chrome</a>
               <a class="eu-button eu-button-primary" href="lookup.html">Try the sample lookup</a>
               <a class="eu-button eu-button-secondary" href="dlm.html">Read the 2029 deadline</a>
             </div>
-            <p class="note">Miami-Dade and Broward coverage is partial. The sample lookup is not the live extract.</p>
+            <p class="note">Lookups include escalators, moving walks, and freight elevators. The sample lookup is not the live extract.</p>
           </section>
           <article class="eu-panel eu-card" aria-labelledby="panel-title">
             <p class="eu-kicker">Recorded example · not a live lookup</p>
@@ -108,17 +110,24 @@
         <section class="band" aria-label="Coverage and the deadline">
           <div class="band-grid">
             <aside class="eu-notice eu-card">
-              <h2>Partial county coverage</h2>
+              <h2>City and county lists</h2>
               <p>
-                Miami-Dade and Broward coverage is partial. Miami-Dade uses the Office of Elevator
-                Safety list, data as of Oct 28, 2026. Broward uses the Elevator Section release, data
-                as of Oct 2026. Owner and install year on those rows say Not in county record. The DLM
-                flag says Unknown, install year not in county record.
+                The extension includes the Florida DBPR statewide extract and the City of Miami, Miami
+                Beach, Broward, and Miami-Dade lists, as each city or county provided them. Lookups
+                include escalators, moving walks, and freight elevators. The servicer on a DBPR row is
+                labeled per DBPR record.
               </p>
               <p>
-                City of Miami and Miami Beach run their own programs. ElevatorUnits does not have their
-                unit lists yet. The panel says: "This jurisdiction runs its own elevator program, so
-                state data is not available here." A miss does not mean the building has no elevators.
+                Miami-Dade uses the Office of Elevator Safety list, data as of Oct 28, 2026. Broward
+                uses the Elevator Section release, data as of Oct 2026. Owner and install year on those
+                county rows say Not in county record. The DLM flag on those county rows says Unknown,
+                install year not in county record.
+              </p>
+              <p>
+                City of Miami uses the city elevator records released Nov 10, 2026. Miami Beach uses
+                the city elevator records released Nov 6, 2026. The 2029 flag applies only to DBPR
+                passenger traction (01) and hydraulic (02) units. A miss does not mean the building
+                has no elevators.
               </p>
             </aside>
             <article class="eu-card">
